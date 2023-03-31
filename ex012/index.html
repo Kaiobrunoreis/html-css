@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos com html5</title>
+</head>
+<body>
+    <h1>colocando video em html5</h1>
+    <p>veja agora como adicionar um video na pagina para o usuario assistir</p>
+    <video src="midia/video.mp4" poster="midia/file.jpg" width="250" height="500" controls autoplay></video>
+    <!--dessa forma acima e a mais simples, porém a baixo farei de outra forma para que possa adicionar varios videos em farios formatos para que o usuario que estiver acessando de navegadores diferentes não tenha problema de compatibildiade-->
+    <video width="250" poster="midia/fota.jpg" controls>
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/video.ogv" type="video/ogg">
+        <source src="midia/video.webm" type="video/webm">
+    </video>
+    <!--quantos mais sources com diferentes extensões de videos você colocar maior vai ser a compatilidade do seu site com diferentes navegadores-->
+    <h1>inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hsiIs4yT9Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--para postar videos do youtube ou videmos basta ir no video clicar em compartilhar e pegar o codgio que fica em incorporar.-->
+</body>
+</html>

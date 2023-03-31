@@ -1,0 +1,39 @@
+@charset "UTF=8";
+/*
+tudo que é id em html, em css vira ( # ) hashtag
+tudo que e class em html, em css vira ( . ) ponto
+id e unico, class pode ser multiplo
+o id sobrepoe as configurações de classe.
+*/
+
+body{
+    background-color:  #385676  ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #0a0b0c;
+    text-align: center;
+}
+h1#principal{
+    text-align: center;
+    color: #08D1CF;
+    font-family: monospace;
+    background-color: #44723f;
+}
+h2{
+    color: #000000;
+}
+.avancado{
+    color: rgb(116, 13, 13);
+}
+.intermediario{
+    color: blue;
+}
+.basico{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+}
+.destaque{
+    background-color: rgb(162, 162, 42);
+    font-family: monospace;
+}

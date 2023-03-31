@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+
+/*
+*{
+    quando usamos o asteristico então todos os elemtnos da paagina receberam as configurações que estiverem dentro dele.
+    ex
+    margin: 0px;
+    padding: 0px;
+    um jeito de deixar a imagem responsiva seria 
+    img{
+        img 100%;
+    }
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@font-face {
+    font-family: android;
+    src: url('fontes/idroid.otf') format('opentype');
+}
+h1{
+    font-family: android;
+    color: green;
+}
+nav > a {
+    text-decoration: underline;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+.titulo{
+    color: white;
+    font-family: monospace;
+    font-size: 4em;
+    text-shadow: 2px 2px 0px black;
+
+}
+nav{
+    text-align: left;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(7, 145, 7),
+    rgb(58, 120, 58), rgb(91, 97, 91));
+}
+nav > a:hover{
+    background-color: green;
+    color: greenyellow;
+}
+h2{
+    font-family: android;
+    color: green;
+    background-image: linear-gradient(to right, rgb(31, 161, 57), transparent);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(89, 153, 96);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 0px;
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+header{
+    background-image: linear-gradient(to right, rgb(7, 145, 7),
+    rgb(58, 120, 58), rgb(91, 97, 91));
+    text-align: center;
+    padding: 30px;
+    min-height: 150px;
+}
+main img.pequena{    
+    max-width: 350px;
+
+}
+main{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    min-width: 320px; /*importante */
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 0px;
+    margin-block-end: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+aside{
+    background-color: rgb(140, 206, 140);
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-shadow: 3px 3px 8px black;
+}
+aside > ul{
+    list-style-type: "\1F5F8\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+aside > h3{
+    font-family: monospace;
+    font-size: 25px;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px -10;
+}
+footer{
+    background-color: rgb(18, 60, 18);
+    text-align: center;
+    color: white;
+    padding: 4px;
+    margin: auto;
+    margin-block-end: 0px;
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+   .embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.corpo{
+    background-color: white;
+}
+header > p {
+    font-family: VT323;
+    font-size: 30px;
+    text-shadow: 1px 0px rgba(0, 0, 0, 0.949);
+}
+   
