@@ -82,8 +82,8 @@ main img.pequena{
 main{
     text-align: center;
     background-color: white;
-    padding: 20px;
-    min-width: 320px; /*importante */
+    padding: 30px;
+    min-width: 500px; /*importante */
     max-width: 1000px;
     margin: auto;
     margin-top: 0px;
