@@ -46,6 +46,7 @@ article > h1{
     text-align: center;
 }
 main{
+    padding: 20px;
     max-width: auto;
     min-width: auto;
 }
