@@ -25,6 +25,7 @@ header{
     background-image: url('van.jpg');
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 nav{
     text-align: right;
