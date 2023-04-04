@@ -19,14 +19,16 @@ p {
     text-align: center;
 }
 header{
-    background-color: rgba(173, 29, 137, 0.474);
+    color: rgb(162, 190, 40);
     text-align: center;
     padding: 30px;
+    background-image: url('van.jpg');
+    background-position: center center;
+    background-size: cover;
 }
 nav{
     text-align: right;
     padding: 10px;
-    background-color: rgba(173, 29, 137, 0.474);
 }
 nav a {
     text-decoration: none;
@@ -45,8 +47,16 @@ article > h1{
     margin: auto;
     text-align: center;
 }
+article{
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 20px;
+}
 main{
     padding: 20px;
     max-width: auto;
     min-width: auto;
+    background-image: url('girassol.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
