@@ -21,7 +21,7 @@ p {
 header{
     color: rgb(162, 190, 40);
     text-align: center;
-    padding: 30px;
+    padding-top: 60px;
     background-image: url('van.jpg');
     background-position: center center;
     background-size: cover;
@@ -50,6 +50,7 @@ article > h1{
 article{
     background-color: rgba(255, 255, 255, 0.699);
     border-radius: 20px;
+    padding-top: 20px;
 }
 main{
     padding: 20px;
