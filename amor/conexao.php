@@ -1,5 +1,4 @@
 <?php
-
 abstract class ClassConexao{
 public function Conectar()
 {
