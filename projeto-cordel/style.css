@@ -72,13 +72,9 @@ section.imagem p{
 }
 section#img01{
     background-image: url('imagens/background001.jpg');
-    
-    
 }
 section#img02{
     background-image: url('imagens/background002.jpg');
-    
-    
 }
 footer{
     background-color: black;
