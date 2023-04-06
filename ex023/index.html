@@ -9,33 +9,33 @@
         bod{
             font-family: 'Courier New', Courier, monospace;
         }
-        table{
+        table{            
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            vertical-align: top;
+            /*vertical-align serve para alinhar verticalmente as inforamções dentro de uma td.*/
         }
-        td.linha{
-            background-color: rgb(220, 11, 11);
+        .numero{
+            text-align: right;
         }
-        tr.aqui{
-            background-color: aqua;
-        }
-
     </style>
 </head>
 <body>
     <h1>minha primeira tabela</h1>
 <table>
-    <tr class="aqui"> <!--primeira linha da tabela-->
+    <tr> <!--primeira linha da tabela-->
         <td>A1</td>
         <td>B1</td>
         <td>C1</td>
     </tr>
     <tr>
-        <td class="linha">A2</td>
+        <td>A2</td>
         <td>B2</td>
         <td>C2</td>
     </tr>
