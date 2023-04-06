@@ -9,13 +9,11 @@
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
-
 *{
     margin: 0px;
     padding: 0px;
     font-size: 1em;
 }
-
 html, body{
     min-height: 100vh;
     background-color: darkgray;
@@ -69,5 +67,4 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
-
 }
