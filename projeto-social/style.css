@@ -26,11 +26,11 @@ section#telefone{
     width: 311px;
     background-image: url('imagens/frame-iphone.png');
     background-repeat: no-repeat;
+    margin: -30px;
 }
 main{
     height: 100vh;
     position: relative;
-    min-width: 320px;
 }
 
 iframe#tela {
@@ -47,10 +47,11 @@ section#redes-sociais {
 
 section#redes-sociais img {
     width: 50px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px black;
     box-sizing: border-box;
+    border: 2px solid black;
 }
 
 section#redes-sociais img:hover{
