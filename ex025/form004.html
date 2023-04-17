@@ -7,17 +7,30 @@
     <title>exemplo de formulario</title>
 </head>
 <body>
+   
+    <form action="cadastro.php" method="get" 
+    autocomplete="on">
     <h1>exemplo de formulario</h1>
-    <form action="cadastro.php" method="get">
-    <p>
-        <label for="iemail">Email</label>
-        <input type="emial" name="email" id="iemail">
-    </p>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+    <fieldset>
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="iemail">Email</label>
+            <input type="emial" name="email" id="iemail" autocomplete="email">
+        </p>
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel" pattern="^\d{4,5}-\d{4,5}$" autocomplete="tel" required>
+        </p>
+    </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+ 
     </form>
-
+<!--estudar sobre RegEx-->
 </body>
 </html>
