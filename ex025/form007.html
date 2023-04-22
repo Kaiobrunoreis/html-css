@@ -6,19 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
 </head>
+<style>
+    form{
+        text-align: center;
+    }
+    input, select, textarea{
+        border-radius: 5px;
+    }
+    .butao{
+        background-color: green;
+        cursor: pointer;
+    }
+    .butao:hover{
+        background-color: greenyellow;
+    }
+    fieldset{
+        width: 300px;
+        margin: 100px auto;
+        background-color: rgba(100, 148, 237, 0.532);
+    }
+    body{
+        background-color: rgba(95, 158, 160, 0.488);
+    }
+</style>
 <body>
-    <h1>Exemplos de formualrios sem input</h1>
-    <form action="casdastro.php" method="get" autocomplete="on">
-
-
-
-
+    
+    <fieldset>
+        <form action="casdastro.php" method="get" autocomplete="on">
+            <h1>FORMULARIOS</h1>
         
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="submit" value="Limpar">
-        </p>
-
-    </form>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+                    <option value="" selected>--- escolha ---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="GO">Goias</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="PA">Pará</option>
+                        <option value="BA">Bahia</option>
+                        <option value="PR">Paraná</option>
+                    </optgroup>
+                </select>
+                <p>
+                    <label for="iprof">Profissão</label>
+                    <input type="text" name="prof" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option>Administrador</option>
+                        <option>Contador</option>
+                        <option>Programador</option>
+                        <option>Prostituta</option>
+                        <option>Estudante</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="imsg">Mensagem: </label><br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                </p>
+                <!--quando utilizar o textarea e recomendado que use o method post, porque não tem a limitação de 3 mil bits.-->
+            <p>
+                <input class="butao" type="submit" value="Enviar">
+                <input class="butao" type="submit" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
 </body>
 </html>
