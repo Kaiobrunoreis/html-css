@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    fieldset{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .butao{
+        text-align: center;
+    }
+    .but{
+        border-radius: 10px;
+        background-color: rgba(220, 20, 60, 0.321);
+        cursor: pointer;
+    }
+    .but:hover{
+        background-color: crimson;
+    }
+    #iesfut:hover{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!--boto botão de radio do mesmo grupo tem que ter o mesmo nome no name. exemplo baixo.-->
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get" autocapitalize="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" checked value="M"><label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesbas"> <label for="iesbas">Basquete</label>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+            <input type="checkbox" name="esfut" id="iesnat"> <label for="iesnat">Natação</label>
+            <input type="checkbox" name="esfut" id="iesten"> <label for="iesten">Tênis</label>
+        </fieldset>
+        <p class="butao">
+            <input class="but" type="submit" value="Enviar">
+            <input class="but" type="submit" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -5,31 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exemplo de formulario</title>
+    <style>
+        fieldset{
+            margin: 50px auto;
+            width: 400px;
+            text-align: center;
+            background-color: rgba(173, 117, 68, 0.21);
+            border: 3px solid rgb(173, 117, 68, 0.607);
+        }
+        body{
+            background-color: rgba(117, 80, 47);
+        }
+        input {
+            background-color: rgba(173, 117, 68, 0.607);
+            border-radius: 5px;
+            color: rgb(47, 52, 206);
+        }
+        .butao{
+            border-radius: 10px;
+            background-color: rgba(173, 117, 68);
+            cursor: pointer;
+            border: 2px solid black;
+            color: black;
+        }
+        .butao:hover{
+            background-color: rgba(234, 155, 84);
+        }
+        input::placeholder{
+            color: rgba(73, 49, 28);
+        }
+    </style>
 </head>
 <body>
    
     <form action="cadastro.php" method="get" 
     autocomplete="on">
-    <h1>exemplo de formulario</h1>
+    
     <fieldset>
+        <h1>exemplo de formulario</h1>
         <p>
             <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome">
+            <input type="text" name="nome" id="inome" placeholder="Nome completo">
         </p>
         <p>
             <label for="iemail">Email</label>
-            <input type="emial" name="email" id="iemail" autocomplete="email">
+            <input type="emial" name="email" id="iemail" autocomplete="email" required placeholder="Email">
         </p>
         <p>
             <label for="itel">Telefone</label>
-            <input type="tel" name="tel" id="itel" pattern="^\d{4,5}-\d{4,5}$" autocomplete="tel" required>
+            <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" autocomplete="tel" required placeholder="(xx)xxxxx-xxxx">
+        </p>
+   
+        <p>
+            <input class="butao" type="submit" value="Enviar">
+            <input class="butao" type="reset" value="Limpar">
         </p>
     </fieldset>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
- 
     </form>
 <!--estudar sobre RegEx-->
 </body>
