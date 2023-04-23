@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<style>
+    .butao{
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: green;
+        cursor: pointer;
+    }
+    .butao:hover{
+        background-color: greenyellow;
+    }
+</style>
+<body>
+    <h1>Exemplo de fomrulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="in1">Numero 1: </label>
+            <input type="number" name="n1" id="ini1" min="0" max="50" required oninput="isoma.innerHTML = Number(ini1.value) + Number(ini2.value)">
+        </p>
+        <p>
+            <label for="in1">Numero 2: </label>
+            <input type="number" name="n2" id="ini2" min="0" max="50" required oninput="isoma.innerHTML = Number(ini1.value) + Number(ini2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma : </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        
+
+        <p>
+            <input class="butao" type="submit" value="Enviar">
+            <input class="butao" type="submit" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
