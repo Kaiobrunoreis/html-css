@@ -5,7 +5,7 @@
  typical device breakpoints
 pequenas telas: ate 600px
 celular: 600px ate 768px
-tablet: 769px ate 992px
+tablet: 768px ate 992px
 desktop: 992px ate 1.200px
 grandes telas: acima de 1.200px
 */
@@ -16,6 +16,8 @@ grandes telas: acima de 1.200px
     }
     section#login{
         width: 90vw;
+        height: 300px;
+        
     }
     section#login > div#imagem{
         float: left;
@@ -34,14 +36,21 @@ grandes telas: acima de 1.200px
     }
     section#login{
         width: 950px;
+        height: 350px;
     }
     section#login > div#imagem{
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
     section#login > div#formulario{
-        float: right;
+        float: left;
         width: 50%;
+    }
+    div#formulario > h1{
+        font-size: 2em;
+    }
+    div#formulario > p {
+        font-size: 1.2em;
     }
 }
